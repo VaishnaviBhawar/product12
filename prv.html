@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 20px;
+        }
+        #mainimg{
+            height: 430px;
+            width: 400px;
+            object-fit: cover;
+            border: 1px solid rgb(209, 16, 16);
+            box-shadow: 0px 4px 8px 1px rgb(125, 116, 116);
+            
+            margin-left: 10%;
+          margin-top: 50px;
+             cursor: pointer;
+
+         
+        }
+        #priductimgcont{
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+   position: relative;
+   top: -430px;
+   left: 10px;
+        }
+        
+        img{
+            height: 80px;
+        width: 80px;
+        object-fit: cover;
+                border: 1px solid gray;
+                margin: 10px;
+                border-radius: 30px;
+                cursor: pointer;
+        }
+        .h1{
+            font-size: 40px;
+            color: rgb(133, 133, 133);
+        }
+        .content{
+            position: relative;
+            top: -800px;
+            left: 40%;
+        }
+        @media screen and (max-width:500px){
+            *{
+            font-size: 10px;
+        }
+        #mainimg{
+            height: 300px;
+            width: 320px;
+            object-fit: cover;
+            border: 1px solid rgb(209, 16, 16);
+            box-shadow: 0px 4px 8px 1px rgb(125, 116, 116);
+            
+            margin-left: 1%;
+          margin-top: 50px;
+             cursor: pointer;
+
+         
+        }
+        #priductimgcont{
+           display: flex;
+           justify-content: center;
+           flex-direction: row;
+           position: relative;
+   top: 10px;
+   left: 3px;
+        }
+        
+        img{
+            height: 70px;
+        width: 70px;
+        object-fit: cover;
+                border: 1px solid gray;
+                margin: 4px;
+                border-radius: 8px;
+                cursor: pointer;
+        }
+        .h1{
+            display: none;
+        }
+        .content{
+           display: none;
+        }
+        }
+        </style>
+        
+  
+</head>
+<body>
+    <img src="img11.webp" id="mainimg">
+    <div id="priductimgcont">
+   
+    <img src="img55.webp" id="img1" onclick="changeimg('img55.webp')">
+    <img src="img22.webp" id="img2" onclick="changeimg('img22.webp')">
+    <img src="img33.webp" id="img3" onclick="changeimg('img33.webp')">
+    <img src="img44.webp" id="img4" onclick="changeimg('img44.webp')">
+</div>
+<div class="content">
+    <span class="h1">3D HD Mobile Phone Magnifier Amplifier <br>(8.5 inch / 1 Pc)</span><br><br>
+    &nbsp;  &nbsp;  &nbsp;
+   <span><b>$45</b></span>
+   <span>
+    <b>Product details</b>
+
+3D HD Mobile Phone Magnifier Amplifier Projector Screen for Movies, Videos,<br> and Gaming–Foldable Phone Stand with Screen Amplifier (8.5 inch / 1 Pc)<br>
+
+<b>Description :-</b>
+
+
+The operation method for mobile phone screen amplifier is pull‑out type,<bR> fashion, HD, large screen
+
+High‑definition large <br>screen brings you ‑visual feast
+
+No need to install tools,<br> easy to operate, you can freely change the viewing angle<br>
+
+
+   </span>
+</div>
+   
+    <script>
+        function changeimg(imgname)
+        {
+            const mainimg=document.getElementById("mainimg")
+            mainimg.src=imgname;
+        
+        }
+    </script>
+    </body>   
+</html>
